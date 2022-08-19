@@ -5,128 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Leslie Pino &middot; UI/UX Designer</title>
+    <title>Leslie Pino &middot; Online Portfolio</title>
   </head>
   <body>
-    <header>
-      <img src="" alt="portfolio-logo" />
-      <nav id="main-header"><li>Works About Contact</li></nav>
+    <header id="header" class="header flex doc-padding doc-margin bg-dirtywhite">
+      <a href="/index.html" id="logo"><img src="" alt="portfolio-logo" /><span class="header-bg"></span></a>
+      
+      <nav id="main-header" class="bold horizontal-list flex doc">
+        <a href="#proj-section">Works</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
       <nav id="burger-nav"></nav>
     </header>
 
-    <section id="intro-section">
-      <h1 id="intro">
-        Hey there, I'm Leslie! <br />
+    <section id="intro-section" class=" doc-padding doc-margin bg-dirtywhite">
+      <h1 id="intro" class="pt-24">
+        Hey there, I'm <span class="highlighter"> <span class="highlight-text">Leslie!</span></span> <br />
         I build user-centered products which adhere effective visual
         communication.
       </h1>
       <div id="intro-btns">
-        <button>Copy Email</button>
-        <button>Chat via LinkedIn</button>
+        <button class="primary-btn btn-text bold">Copy Email</button>
+        <button class="secondary-btn btn-text bg-dirtywhite bold">Chat via LinkedIn</button>
       </div>
-      <button id="down-btn"></button>
+      <img src="" alt="down button" class="down-btn flex">
     </section>
 
     <section id="proj-section">
       <!-- prj#1 -->
-      <div id="project-one">
-        <div>
-          <span>01</span>
-          <h3>Project Name Goes Here & Other Details</h3>
-          <p>
+      <div id="project" class="doc-padding doc-margin flex row">
+        <div id="ptext" class="proj-text">
+          <div class="proj-header">
+              <span class="proj-num bold">01</span><h3 class="proj-title">Project Name Goes Here & Other Details</h3>
+          </div>
+          
+          <p class="proj-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
             dictum cursus blandit pulvinar.Lorem ipsum dolor sit amet,
             consectetur adipiscing elit. Bibendum dictum cursus blandit
             pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Bibendum dictum cursus blandit pulvinar.
           </p>
-          <button>Case Study &rarr;</button>
+          <a href="/" class="proj-btn"><strong>Case Study </strong>&rarr;</a>
         </div>
-
-        <div>
-          <img src="" alt="project-one-img" />
-        </div>
-      </div>
-
-      <!-- prj#2 -->
-      <div id="project-two">
-        <div>
-          <span>02</span>
-          <h3>Project Name Goes Here & Other Details</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
-            dictum cursus blandit pulvinar.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Bibendum dictum cursus blandit
-            pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Bibendum dictum cursus blandit pulvinar.
-          </p>
-          <button>Case Study &rarr;</button>
-        </div>
-
-        <div>
-          <img src="" alt="project-two-img" />
-        </div>
-      </div>
-
-      <!-- prj#3 -->
-      <div id="project-three">
-        <div>
-          <span>03</span>
-          <h3>Project Name Goes Here & Other Details</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
-            dictum cursus blandit pulvinar.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Bibendum dictum cursus blandit
-            pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Bibendum dictum cursus blandit pulvinar.
-          </p>
-          <button>Case Study &rarr;</button>
-        </div>
-
-        <div>
-          <img src="" alt="project-three-img" />
-        </div>
-      </div>
-
-      <!-- prj#4 -->
-      <div id="project-four">
-        <div>
-          <span>04</span>
-          <h3>Project Name Goes Here & Other Details</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
-            dictum cursus blandit pulvinar.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Bibendum dictum cursus blandit
-            pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Bibendum dictum cursus blandit pulvinar.
-          </p>
-          <button>Case Study &rarr;</button>
-        </div>
-
-        <div>
-          <img src="" alt="project-four-img" />
-        </div>
-      </div>
-
-      <!-- prj#5 -->
-      <div id="project-five">
-        <div>
-          <span>05</span>
-          <h3>Project Name Goes Here & Other Details</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
-            dictum cursus blandit pulvinar.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Bibendum dictum cursus blandit
-            pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Bibendum dictum cursus blandit pulvinar.
-          </p>
-          <button>Case Study &rarr;</button>
-        </div>
-
-        <div>
-          <img src="" alt="project-five-img" />
-        </div>
-      </div>
+        <img src="/assets/images/HOMEPAGE.png" alt="project-one-img" class="proj-img" />
+      <div>
     </section>
 
     <section id="contact-section">
@@ -136,7 +59,7 @@
           get in touch.
         </h2>
 
-        <button>Let's Collaborate &rarr;</button>
+        <button class="primary-btn bold btn-text">Let's Collaborate &rarr;</button>
       </div>
 
       <footer id="socials">
