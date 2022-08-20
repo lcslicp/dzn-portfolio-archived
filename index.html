@@ -6,35 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Leslie Pino &middot; Online Portfolio</title>
+    <script src="index.js" async></script>
   </head>
   <body>
-    <header id="header" class="header flex doc-padding doc-margin bg-dirtywhite">
-      <a href="/index.html" id="logo"><img src="" alt="portfolio-logo" /><span class="header-bg"></span></a>
+    <header id="header" class="header flex doc-padding doc-margin">
+      <a href="/index.html" id="logo"><img src="" alt="portfolio-logo" /></a>
       
-      <nav id="main-header" class="bold horizontal-list flex doc">
+      <nav id="main-header" class="bold horizontal-list flex">
         <a href="#proj-section">Works</a>
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
       <nav id="burger-nav"></nav>
     </header>
 
-    <section id="intro-section" class=" doc-padding doc-margin bg-dirtywhite">
+    <section id="intro-section" class=" doc-padding doc-margin bg-dirtywhite rounded drop-shadow">
       <h1 id="intro" class="pt-24">
-        Hey there, I'm <span class="highlighter"> <span class="highlight-text">Leslie!</span></span> <br />
-        I build user-centered products which adhere effective visual
-        communication.
+        Hey there, I'm <span class="highlighter-2"> Leslie</span>! <br />
+        I build <span class="highlighter-2">user-centered</span>  products which adhere effective <span class="highlighter-2">visual
+          communication</span> .
       </h1>
       <div id="intro-btns">
-        <button class="primary-btn btn-text bold">Copy Email</button>
-        <button class="secondary-btn btn-text bg-dirtywhite bold">Chat via LinkedIn</button>
+        <button class="primary-btn btn-text bold" onclick="copyEmail()">Copy Email</button>
+        <button class="secondary-btn btn-text bg-dirtywhite bold" onclick="skypeChat()">Chat via Skype</button>
       </div>
       <img src="" alt="down button" class="down-btn flex">
+      <p class=".btn text .primary-btn"></p>
     </section>
-
-    <section id="proj-section">
+    
+    <section id="proj-section" class="drop-shadow doc-margin">
       <!-- prj#1 -->
-      <div id="project" class="doc-padding doc-margin flex row">
-        <div id="ptext" class="proj-text">
+    <div id="proj-container" class="first-proj">
+      <div id="project" class="doc-padding flex row">
+        <div class="proj-text">
           <div class="proj-header">
               <span class="proj-num bold">01</span><h3 class="proj-title">Project Name Goes Here & Other Details</h3>
           </div>
@@ -46,32 +49,119 @@
             pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Bibendum dictum cursus blandit pulvinar.
           </p>
-          <a href="/" class="proj-btn"><strong>Case Study </strong>&rarr;</a>
+          <a href="/" class="proj-btn highlighter-2"><strong>Case Study </strong>&rarr;</a>
         </div>
-        <img src="/assets/images/HOMEPAGE.png" alt="project-one-img" class="proj-img" />
-      <div>
+        <img src="/assets/images/HOMEPAGE.png" alt="project-one-img" class="proj-img proj-1" />
+      </div>
+    </div>
+
+    <!-- prj#2 -->
+    <div id="proj-container">
+      <div id="project" class="doc-padding flex row rounded ">
+        <img src="/assets/images/HOMEPAGE.png" alt="project-one-img" class="proj-img2" />
+        <div class="proj-text">
+          <div class="proj-header">
+              <span class="proj-num bold">02</span><h3 class="proj-title">Project Name Goes Here & Other Details</h3>
+          </div>
+          
+          <p class="proj-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
+            dictum cursus blandit pulvinar.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Bibendum dictum cursus blandit
+            pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Bibendum dictum cursus blandit pulvinar.
+          </p>
+          <a href="/" class="proj-btn highlighter-2"><strong>Case Study </strong>&rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- prj#3 -->
+    <div id="proj-container ">
+      <div id="project" class="doc-padding flex row -margin-top">
+        <div class="proj-text">
+          <div class="proj-header">
+              <span class="proj-num bold">03</span><h3 class="proj-title">Project Name Goes Here & Other Details</h3>
+          </div>
+          
+          <p class="proj-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
+            dictum cursus blandit pulvinar.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Bibendum dictum cursus blandit
+            pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Bibendum dictum cursus blandit pulvinar.
+          </p>
+          <a href="/" class="proj-btn highlighter-2"><strong>Case Study </strong>&rarr;</a>
+        </div>
+        <img src="/assets/images/HOMEPAGE.png" alt="project-one-img" class="proj-img proj-1" />
+      </div>
+    </div>
+
+     <!-- prj#4 -->
+     <div id="proj-container">
+      <div id="project" class="doc-padding flex row">
+        <img src="/assets/images/HOMEPAGE.png" alt="project-one-img" class="proj-img2" />
+        <div class="proj-text">
+          <div class="proj-header">
+              <span class="proj-num bold">04</span><h3 class="proj-title">Project Name Goes Here & Other Details</h3>
+          </div>
+          
+          <p class="proj-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
+            dictum cursus blandit pulvinar.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Bibendum dictum cursus blandit
+            pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Bibendum dictum cursus blandit pulvinar.
+          </p>
+          <a href="/" class="proj-btn highlighter-2"><strong>Case Study </strong>&rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- prj#5 -->
+    <div id="proj-container">
+      <div id="project" class="doc-padding flex row rounded -margin-top">
+        <div class="proj-text">
+          <div class="proj-header">
+              <span class="proj-num bold">05</span><h3 class="proj-title">Project Name Goes Here & Other Details</h3>
+          </div>
+          
+          <p class="proj-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
+            dictum cursus blandit pulvinar.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Bibendum dictum cursus blandit
+            pulvinar.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Bibendum dictum cursus blandit pulvinar.
+          </p>
+          <a href="/" class="proj-btn highlighter-2"><strong>Case Study </strong>&rarr;</a>
+        </div>
+        <img src="/assets/images/HOMEPAGE.png" alt="project-one-img" class="proj-img proj-1" />
+      </div>
+    </div>
     </section>
 
-    <section id="contact-section">
-      <div id="contact-closer">
-        <h2>
-          Let's make magic happen, <br />
+
+    <section id="contact-section" class="doc-padding">
+      <div id="contact-closer" class="flex col">
+        <h2 class="magic">
+          Let's make <span class="highlighter-2">magic</span> happen, <br />
           get in touch.
         </h2>
 
-        <button class="primary-btn bold btn-text">Let's Collaborate &rarr;</button>
+        <button class="primary-btn bold btn-text" onclick="contact()">Let's Collaborate &rarr;</button>
       </div>
 
       <footer id="socials">
-        <p>
-          <span>Let's connect</span><br />
-          <li>linkedin</li>
-          <li>dribbble</li>
-          <li>behance</li>
-          <li>github</li>
+        <span>Let's connect</span><br />
+            <a href="https://www.linkedin.com/in/lcslicp/" target="_blank" class="links bold">linkedin</a>
+            <a href="https://dribbble.com/lcslicp" target="_blank" class="links bold">dribbble</a>
+            <a href="https://www.behance.net/lcslicp" target="_blank" class="links bold">behance</a>
+            <a href="https://github.com/lcslicp" target="_blank" class="links bold">github</a>
+
+            <span class="copyright">Designed &amp; Developed by Leslie Pino</span>
         </p>
 
-        <p>Designed &amp; Developed by Leslie Pino</p>
+       
       </footer>
     </section>
   </body>
