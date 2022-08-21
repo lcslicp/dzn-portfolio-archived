@@ -43,6 +43,10 @@
   background-color: var(--dirty-white);
 }
 
+.bg-white {
+  background-color: var(--white);
+}
+
 .horizontal-list {
   justify-content: flex-end;
   gap: 30px;
@@ -102,7 +106,7 @@ a:hover {
 }
 
 .drop-shadow {
-  filter: drop-shadow(0 4rem 3rem rgba(39, 39, 39, 0.4));
+  filter: drop-shadow(0 4rem 7rem rgba(39, 39, 39, 0.3));
 }
 
 
@@ -200,12 +204,12 @@ a:hover {
 
 .proj-title, .proj-num {
   position: absolute;
-  width: 40%;
+  width: 70%;
 }
 
 .proj-title {
   font-size: 2.5rem;
-  margin-left: 3.4rem;
+  margin-left: 8rem;
 }
 
 .proj-num {
@@ -216,13 +220,16 @@ a:hover {
 
 .proj-text {
   /* border: 2px solid red; */
+  position: absolute;
   padding: 20% 0;
-  width: 45%;
+  width: 50%;
+  z-index: 3;
 }
 
 .proj-description {
   padding-top: 12rem;
   padding-bottom: 3rem;
+  width: 80%;
 }
 
 .proj-img {
@@ -233,7 +240,7 @@ a:hover {
   padding-right: 9rem;
 }
 
-.proj-img, .proj-img2 {
+.proj-img {
   width: 25%;
   height: auto;
   padding-top: 15%;
@@ -241,7 +248,39 @@ a:hover {
 }
 
 .proj-1 {
-  margin-top: 7rem;
+  width: auto;
+  max-width: 1000px;
+  max-height: 667px;
+  z-index: 2;
+  height: auto;
+  margin-left: auto;
+  margin-right: -12%;
+}
+
+.project-2, .proj-text-3 {
+  padding-top: 10rem;
+}
+
+.proj-2 {
+  padding-top: 20%;
+  width: 55%;
+  margin-left: -10%;
+}
+
+.proj-text-2 {
+  margin-left: 40%;
+  z-index: 9 ;
+}
+
+.proj-3 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: -5rem;
+  margin-top: 25rem;
+}
+
+.proj-5 {
+  padding-bottom: 10rem;
 }
 
 .-margin-top {
@@ -316,6 +355,16 @@ a:hover {
   padding-top: 10px;
 }
 
+.display-img {
+  max-width: 1200px;
+  max-height: 1128px;
+  scale: 0.85;
+  /* margin-right: 60rem; */
+  margin-left: 20rem;
+  margin-top: -15rem;
+  
+}
+
 .tools {
   padding-left: 40px;
   width: 30%;
@@ -327,4 +376,47 @@ a:hover {
   padding: 0;
   /* margin-left: -30px; */
   width: 50%;
+}
+
+#about-intro {
+  position: relative;
+  margin-top: -1%;
+  z-index: 5;
+}
+
+#about-title {
+  font-size: 3.5rem;
+  padding-top: 15%;
+}
+
+.about {
+  position: absolute;
+  z-index: 9;
+  width: 90%;
+  /* padding-top: 14rem; */
+}
+
+.about-desc {
+  width: 40%;
+  line-height: 2rem;
+  /* padding-bottom: 8rem; */
+}
+
+#experience {
+  z-index: 5;
+  background-color: var(--white);
+  margin-top: -10%;
+  padding-top: 15%;
+  padding-bottom: 8rem;
+}
+
+td {
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.exp-small {
+  font-size: 0.9rem;
+  color: var(--gray);
 }
