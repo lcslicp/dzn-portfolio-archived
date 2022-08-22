@@ -5,8 +5,12 @@
   --white: #fff;
   --black: #272727;
   --gray: #868686;
-  --highlight: #e8da7d;
+  --highlight: #EEDC82;
   overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  /* scroll-snap-align: start; */
+  scroll-behavior: smooth;
+  position: sticky;
 }
 
 .doc-padding {
@@ -78,26 +82,88 @@ a:hover {
   border: none;
 }
 
-.proj-btn:hover, .primary-btn:hover, .secondary-btn:hover {
-  filter: opacity(0.9);
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
 .primary-btn:active, .proj-btn:active, .secondary-btn:active {
   transform: translateY(4px);
 }
 
-.primary-btn {
-    border: 1px solid var(--dirty-white);
-    color: var(--white);
-    background-color: var(--black);
+.primary-btn, .secondary-btn, .collab-btn {
+    padding: 15px 20px;
+    margin: 5px;
+    transition: all 0.5s;
+}
+
+.primary-btn span, .secondary-btn span, .collab-btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.primary-btn span::after {
+  content: '\274F';
+}
+
+.secondary-btn span::after {
+  content: '\2197';
+}
+
+.collab-btn span::after {
+  content: '\276F';
+}
+
+.primary-btn span::after {
+  top: -3px;
+  margin-right: -18px;
+}
+
+.secondary-btn span::after {
+  top: 0px;
+  margin-right: -14px;
+}
+
+.collab-btn span::after {
+  top: -1.5px;
+  margin-right: -15px;
+}
+
+.primary-btn span::after, .secondary-btn span::after, .collab-btn span::after {
+  position: absolute;
+  opacity: 0;
+  right: -5px;
+  transition: 0.5s;
+}
+
+.primary-btn:hover, .secondary-btn:hover, .collab-btn:hover {
+  padding-right: 35px;
+  cursor: pointer;
+}
+
+.primary-btn:hover span::after, .secondary-btn:hover span::after, .collab-btn:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+.primary-btn, .collab-btn {
+  border: 1px solid var(--dirty-white);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .secondary-btn {
-    border: 1px solid var(--black);
-    color: var(--black);
-    margin-left: 20px;
+  border: 1px solid var(--black);
+  color: var(--black);
+  background-color: var(--dirty-white);
+}
+
+.down-btn {
+  scale: 0.3;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.down-btn:hover {
+  padding-bottom: 30px;
+  transition: 0.5s;
 }
 
 .rounded {
@@ -204,7 +270,7 @@ a:hover {
 
 .proj-title, .proj-num {
   position: absolute;
-  width: 70%;
+  width: 60%;
 }
 
 .proj-title {
