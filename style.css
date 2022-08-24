@@ -289,7 +289,7 @@ a:hover {
   position: absolute;
   padding: 20% 0;
   width: 50%;
-  z-index: 3;
+  z-index: 999;
 }
 
 .proj-description {
@@ -323,7 +323,7 @@ a:hover {
   margin-right: -12%;
 }
 
-.project-2, .proj-text-3 {
+.project-2, .proj-text-3, .proj-text-5 {
   padding-top: 10rem;
 }
 
@@ -333,7 +333,7 @@ a:hover {
   margin-left: -10%;
 }
 
-.proj-text-2 {
+.proj-text-2, .proj-text-4 {
   margin-left: 40%;
   z-index: 9 ;
 }
@@ -485,4 +485,313 @@ td {
 .exp-small {
   font-size: 0.9rem;
   color: var(--gray);
+}
+
+/*************************************/
+/************** TABLET ***************/
+/*************************************/
+
+@media screen
+and (min-width: 481px)
+and (max-width: 820px) {
+  
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .doc-padding {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .btn-text {
+      padding: 5px 20px;
+      border-radius: 50px;
+      font-size: 1.3rem;
+  }
+  
+  .proj-btn {
+    margin-left: 30px;
+    font-size: 2.2rem;
+  }
+  
+  .primary-btn, .secondary-btn, .collab-btn {
+      padding: 15px 25px;
+      margin: 5px;
+      transition: all 0.5s;
+  }
+  
+  .collab-btn span::after {
+    content: '\276F';
+  }
+  
+  
+  .secondary-btn span::after {
+    top: 0px;
+    margin-right: -14px;
+  }
+  
+  .collab-btn span::after {
+    top: -1.5px;
+    margin-right: -15px;
+  }
+  
+  .down-btn {
+    scale: 0.5;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .rounded {
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  
+  .drop-shadow {
+    filter: drop-shadow(0 4rem 7rem rgba(39, 39, 39, 0.3));
+  }
+  
+  .doc-margin {
+    margin-left: -3%;
+    margin-right: -1%;
+  }
+  
+  #intro-section {
+    height: 80vh;
+    width: 85vw;
+  }
+  
+  #intro {
+    padding-top: 80px;
+      font-size: 2.6rem;
+      width: 100%;
+      /* border: 2px solid red; */
+  }
+
+  #intro-btns {
+    padding-top: 20px;
+  }
+
+  .highlighter-2 {
+    padding: 0 12px 5px 4px;
+  }
+  
+  .down-btn {
+    margin-top: 50px;
+  }
+  
+  #proj-container {
+    margin-top: -25%;
+    display: flex;
+    flex-direction: column;
+    width: 110vw;
+  }
+  
+  .first-proj {
+    padding-top: 100px;
+  }
+  
+  .project-header {
+    position: relative;
+  }
+  
+  .proj-title, .proj-num {
+    position: absolute;
+    width: 70vw;
+  }
+  
+  .proj-title {
+    font-size: 3.4rem;
+    margin-left: 6rem;
+  }
+  
+  .proj-num {
+    font-size: 10rem;
+  }
+  
+  .proj-text {
+    /* padding: 100% 0; */
+    margin-top: 75%;
+  }
+  
+  .proj-description {
+    padding-top: 14rem;
+    padding-left: 30px;
+    font-size: 1.7rem;
+    width: 75vw;
+    line-height: 35px;
+  }
+  
+  .proj-1 {
+    width: auto;
+    max-width: 1000px;
+    max-height: 707px;
+    z-index: 2;
+    height: auto;
+    margin-left: -32%;
+    margin-right: 0;
+  }
+
+  #proj {
+    flex-direction: column;
+  }
+  
+  .project-2 {
+    padding-top: 20rem;
+    padding-bottom: 100vw;
+  }
+  
+  .proj-2 {
+    padding-top: 90%;
+    width: 100%;
+    margin-left: -5%;
+  }
+  
+  .proj-text-2 {
+    padding-top: 90%;
+    margin-left: 0;
+    z-index: 9;
+  }
+  
+  .proj-3 {
+    width: 100vw;
+    margin-left: -12%;
+    /* margin-right: -5rem; */
+    margin-top: 10rem;
+    z-index: 30;
+  }
+
+  .proj-text-4 {
+    padding-top: 35rem;
+    margin-left: 0;
+  }
+  
+  .proj-5 {
+    padding-bottom: 50rem;
+    width: 85vw;
+  }
+
+  #proj-text-5 {
+    padding-top: 12rem;
+  }
+  
+  #contact-section {
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #contact-closer {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .magic {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  #socials {
+    filter: opacity(0.7);
+    padding-top: 20%;
+    line-height: 30px;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    
+  }
+  
+  .links {
+    padding-right: 40px;
+  }
+  
+  .copyright {
+    padding-left: 20%;
+  }
+  
+  .copyright-center {
+    left: -57%;
+    right: -55%;
+    padding-bottom: 20px;
+  }
+  
+  .copyright, .copyright-center {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+  
+  #collab {
+    padding-top: 10%;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .collab-desc {
+    line-height: 2rem;
+    width: 70%;
+    font-size: 20px;
+    padding-bottom: 2rem;
+  }
+  
+  .collab-tools {
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .label-contact {
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  .display-img {
+    max-width: 1200px;
+    max-height: 1128px;
+    scale: 0.85;
+    /* margin-right: 60rem; */
+    margin-left: 20rem;
+    margin-top: -15rem;
+    
+  }
+  
+  .tools {
+    padding-left: 60px;
+    width: 50%;
+  }
+  
+  .tool-list {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    padding-right: 10px;
+  }
+  
+  #about-intro {
+    position: relative;
+    margin-top: -1%;
+    z-index: 5;
+  }
+  
+  #about-title {
+    font-size: 3.5rem;
+    padding-top: 15%;
+  }
+  
+  .about {
+    position: absolute;
+    z-index: 9;
+    width: 90%;
+    /* padding-top: 14rem; */
+  }
+  
+  .about-desc {
+    width: 40%;
+    line-height: 2rem;
+    /* padding-bottom: 8rem; */
+  }
 }
