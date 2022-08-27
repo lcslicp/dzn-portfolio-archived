@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Contact &middot; Leslie Pino</title>
+    <script src="index.js" async></script>
 </head>
 <body>
     <section>
@@ -16,7 +17,16 @@
               <a href="/index.html#proj-section">Works</a>
               <a href="/about.html">About</a>
               <a href="/contact.html">Contact</a></nav>
-            <nav id="burger-nav"></nav>
+              <button id="burger-nav" onclick="burgerOpen
+              ()">&#9776;</button>
+                <nav id="burger-menu" class="bg-dirtywhite flex col">
+                  <button id="menu-button" onclick="burgerClose
+                  ()">x</button>
+                  <a href="/index.html#proj-section" class="menu" onclick="burgerClose
+                  ()">Works</a>
+                  <a href="/about.html" class="menu">About</a>
+                  <a href="/contact.html" class="menu">Contact</a>
+                </nav>
           </header>
     
         <section class="flex doc-padding" id="collab">

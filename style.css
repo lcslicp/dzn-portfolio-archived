@@ -54,8 +54,16 @@
   background-color: var(--white);
 }
 
+.bg-black {
+  background-color: var(--black);
+}
+
+.white {
+  color: var(--white);
+}
+
 .horizontal-list {
-  visibility: visible;
+  visibility: collapse;
 }
 
 a {
@@ -78,6 +86,13 @@ a:hover {
   padding-top: 14%;
 }
 
+.menu {
+  padding-left: 15%;
+  padding-top: 5%;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
 #main-header, #logo {
   z-index: 99;
 }
@@ -90,14 +105,66 @@ a:hover {
   z-index: 99;
 }
 
-#burger-nav {
+#burger-nav, #burger-menu {
   position: fixed;
+}
+
+#burger-nav {
   width: 4.2rem;
   height: 4.2rem;
   background-color: var(--black);
   top: 0;
   right: 24px;
   border-radius: 100%;
+  transition: all ease 05ms;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+#burger-nav:hover {
+  cursor: pointer;
+}
+
+#burger-menu {
+ width: 540px;
+ height: 100vh;
+ top: 0;
+ z-index: 9999;
+ padding-top: 5rem;
+ visibility: collapse;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(500px);
+}
+100% {
+    transform: translateX(0px);
+}
+}
+
+@keyframes slideout {
+  0% {
+    transform: translateX(-500px);
+}
+100% {
+    transform: translateX(500px);
+}
+  }
+
+#menu-button {
+  font-size: 4rem;
+  width: 40%;
+  border: none;
+  margin-left: 35%;
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+#menu-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+
 }
 
 .header, #burger-nav {
@@ -468,9 +535,10 @@ td {
 
 .horizontal-list {
   visibility: visible;
-  justify-content: flex-end;
+  position: fixed;
+  right: 0%;
+  padding-right: inherit;
   gap: 30px;
-  width: 30%;
   text-transform: uppercase;
 }
 
@@ -696,7 +764,7 @@ td {
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 900px) {
   .doc-padding {
     padding-left: 60px;
     padding-right: 60px;
@@ -709,7 +777,6 @@ td {
  
   .horizontal-list {
     gap: 40px;
-   width: 43%;
   }
 
   #intro {
@@ -728,7 +795,9 @@ td {
   }
   
   .proj-1 {
-    margin-left: -12%;
+    max-width: 1000px;
+    max-height: 667px;
+    margin-left: -2%;
   }
   
   .proj-title, .proj-num {
@@ -760,11 +829,11 @@ td {
   .proj-3 {
     width: 110%;
     margin-left: -5%;
-    margin-top: 70%;
+    margin-top: 50%;
   }
 
   .proj-text-3 {
-    margin-top: 40rem;
+    margin-top: 35rem;
   }
   
   .proj-4 {
@@ -772,7 +841,7 @@ td {
   }
   
   .proj-text-4 {
-    margin-top: 30rem;
+    margin-top: 35rem;
   }
   
   .proj-5 {
@@ -839,12 +908,7 @@ td {
   }
   
   .label-contact {
-    color: var(--gray);
     padding-bottom: 10px;   
-  }
-  
-  .display-img {
-    visibility: hidden;
   }
   
   .tool-list {
@@ -864,8 +928,8 @@ td {
 
   .display-img {
     visibility: visible;
-    scale: 0.5;
-    top: -40%;
+    scale: 0.6;
+    top: -45%;
     left: -20%;
   }
 
@@ -877,7 +941,321 @@ td {
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .doc-padding {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .horizontal-list {
+    gap: 50px;
+  }
+
+  #intro-section {
+    height: 140vh;
+  }
   
+
+  #intro {
+    font-size: 3rem;
+  }
+  
+  .proj-1 {
+    max-width: 900px;
+  max-height: 567px;
+    margin-left: 35%;
+  }
+  
+  
+  .proj-title {
+    font-size: 3.1rem;
+    margin-left: 7rem;
+  }
+  
+  .proj-num {
+    font-size: 8rem;
+  }
+  
+  .proj-text {
+    padding: 20rem 0;
+    
+  }
+
+  .proj-description {
+    padding-top: 25%;
+  }
+
+  .proj-text, .proj-3 {
+    width: 50%;
+  }
+
+  .proj-text-2, .proj-3, .proj-text-4 {
+    padding-left: 45%;
+  }
+
+.proj-text-2 {
+    width: 45%;
+  }
+
+  .proj-2 {
+    padding-top: 25rem;
+    width: 55%;
+    margin-left: -4%;
+  }
+  
+  .proj-text-2 {
+    margin-top: 10rem;
+  }
+  
+  .proj-3 {
+    margin-left: 8%;
+    margin-top: 8%;
+  }
+
+  .proj-text-3 {
+    margin-top: -10rem;
+  }
+
+  .proj-4 {
+    margin-top: -15rem;
+    margin-left: 0;
+  }
+  
+  .proj-text-4 {
+    margin-top: 5rem;
+  }
+  
+  .proj-5 {
+    padding-bottom: 8rem;
+    margin-top: 12rem;
+  }
+  
+  #proj-text-5 {
+    padding-top: 18rem;
+  }
+
+  
+  #socials {
+    padding-top: 15%;
+    line-height: 30px;
+    font-size: 1rem;
+  }
+  
+  .links {
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+  
+  .copyright {
+    padding-top: 35px;
+  }
+  
+  .copyright-center {
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .copyright-about {
+    margin-left: 40%;
+  }
+  
+  .collab-desc {
+    width: 90%;
+  }
+  
+  .tool-list {
+    font-size: 1rem;
+  }
+
+  table {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+  
+
+  td {
+    width: 20%;
+  }
+
+  .display-img {
+    scale: 0.7;
+    top: -20%;
+    left: 1%;
+  }
+
+  #about-intro {
+    height: 120vh;
+  }
+
+  #about-title, .about-desc {
+    width: 50%;
+  }
+
+  #experience {
+    margin-top: -10rem;
+    /* padding-bottom: 5rem; */
+  }
+
+  .exp-small {
+    font-size: 0.9rem;
+    width: 100%;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+
+  #intro-section {
+    height: 100vh;
+  }
+
+  #intro {
+    font-size: 3.5rem;
+    width: 80%;
+    padding-top: 0%;
+  }
+
+  .down-btn {
+    padding-top: 0px;
+  }
+
+  #proj-container {
+    margin-top: -5%;
+  }
+  
+  .proj-1 {
+    max-width: 1000px;
+    max-height: 667px;
+    margin-right: -12%;
+  }
+  
+  
+  .proj-title {
+    font-size: 3.3rem;
+    margin-left: 8rem;
+  }
+  
+  .proj-num {
+    font-size: 10rem;
+  }
+  
+  .proj-text {
+    padding: 15rem 0;
+  }
+
+  .proj-description {
+    padding-top: 27%;
+    line-height: 1.6rem;
+  }
+
+  .proj-2 {
+    padding-top: 15rem;
+  }
+  
+  .proj-text-2 {
+    margin-top: 8rem;
+  }
+
+  .proj-text-2, .proj-3, .proj-text-4 {
+    padding-left: 45%;
+  }
+  
+  .proj-3 {
+    width: 55%;
+    margin-left: 3%;
+    margin-top: 0%;
+  }
+
+  .proj-text-3 {
+    margin-top: -8rem;
+  }
+
+  .proj-4 {
+    margin-top: -5rem;
+  }
+  
+  .proj-text-4 {
+    margin-top: 0rem;
+  }
+  
+  .proj-5 {
+    padding-bottom: 10rem;
+  }
+  
+  #proj-text-5 {
+    padding-top: 12rem;
+  }
+  
+  .copyright {
+    padding-top: 55px;
+  }
+
+  .copyright-about {
+    margin-left: 50%;
+  }
+
+  .copyright-center {
+    padding-top: 150px;
+  }
+
+  #collab {
+    padding-top: 10%;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  #collab-title, #about-title {
+    padding-top: 1rem;
+    font-size: 3.6rem;
+    width: 70%;
+  }
+  
+  .collab-desc {
+    width: 75%;
+  }
+
+  .collab-tools {
+    margin-left: -8%;
+  }
+  
+  .tool-list {
+    font-size: 0.8rem;
+  }
+
+  table {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+  
+
+  td {
+    width: 20%;
+  }
+
+  .display-img {
+    scale: 0.7;
+    top: -35%;
+    left: 17%;
+  }
+
+  #about-intro {
+    height: 90vh;
+  }
+
+  #about-title, .about-desc {
+    width: 50%;
+  }
+
+  #experience {
+    margin-top: -10rem;
+    /* padding-bottom: 5rem; */
+  }
+
+  .exp-small {
+    font-size: 0.9rem;
+    width: 100%;
+    padding-right: 2rem;
+  }
 }
 
 /*:root {
