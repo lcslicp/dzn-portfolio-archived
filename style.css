@@ -246,7 +246,7 @@ margin-right: -14px;
 }
 
 .collab-btn span::after {
-top: -1.5px;
+top: -3px;
 margin-right: -15px;
 }
 
@@ -326,16 +326,17 @@ filter: drop-shadow(0 4rem 7rem rgba(39, 39, 39, 0.3));
 
 .proj-description {
   width: 100%;
-  padding-top: 0;
+  padding-top: 1rem;
   margin-top: 0;
   padding-bottom: 1rem;
+  line-height: 1.8rem;
 }
 
 .proj-btn {
   color: var(--black);
   font-size: 1.2rem;
   border: none;
-  width: 16ch;
+  width: 14ch;
   }
 
 .magic {
@@ -468,6 +469,42 @@ td {
   visibility: hidden;
 }
 
+.project-header {
+  position: relative;
+  width: 100vw;
+  height: 70%;
+  filter: brightness(80%);
+  margin-top: -2%;
+  margin-left: -2%;
+}
+
+.header-img {
+  opacity: 0.6;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.proj-deets {
+  padding-top: 10%;
+}
+
+.deets-title {
+  font-size: 2.2rem;
+}
+
+.deets-text {
+  padding-top: 0%;
+  margin-top: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.deets-footer {
+  padding-top: 15%;
+  justify-content: space-between;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* @media only screen and (min-width: 600px) {
 
@@ -547,7 +584,7 @@ border-bottom-right-radius: 100px;
 }
 
 .proj-description {
-  line-height: 1.7rem;
+  line-height: 1.9rem;
 }
 
 .proj-btn {
@@ -663,6 +700,27 @@ td {
 
 .exp-type {
   width: 20%;
+}
+
+.project-header {
+  width: 100vw;
+  height: 20rem;
+  margin-left: -1%;
+  margin-right: 0;
+}
+
+.proj-deets {
+  padding-top: 10%;
+}
+
+.deets-title {
+  font-size: 3.8rem;
+}
+
+.deets-footer {
+  padding-top: 15%;
+  font-size: 1.8rem;
+  justify-content: space-between;
 }
 }
 
@@ -859,7 +917,6 @@ td {
   
   .proj-btn {
     font-size: 1.2rem;
-    width: 16ch;
     }
   
   #socials {
@@ -973,7 +1030,6 @@ td {
   
   .proj-btn {
     font-size: 1.2rem;
-    width: 16ch;
     }
 
   .copyright {
@@ -1046,6 +1102,13 @@ td {
     width: 100%;
     padding-right: 2rem;
   }
+
+  .proj-deets, .deets-footer {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+
 }
 
 /*:root {
