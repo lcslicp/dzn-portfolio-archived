@@ -9,8 +9,8 @@
   --white: #fff;
   --black: #272727;
   --gray: #868686;
-  --highlight: #EEDC82;
-  --highlight2: #96d2ad;
+  --highlight: #a7c6ee;
+  --highlight2: #afe3d9;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -491,7 +491,7 @@ td {
   height: 70%;
   margin-top: -2%;
   margin-left: -2%;
-  z-index: 999;
+  z-index: 9;
 }
 
 .header-img {
