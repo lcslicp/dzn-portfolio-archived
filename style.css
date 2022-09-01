@@ -70,6 +70,10 @@
   padding-bottom: 2rem;
 }
 
+.right {
+  text-align: right;
+}
+
 #logo {
   width: 50px;
   height: auto;
@@ -521,11 +525,16 @@ td {
 }
 
 .proj-deets {
-  padding-bottom: 5%;
+  padding-bottom: 0;
 }
 
 .deets-title {
   font-size: 2.2rem;
+}
+
+.deets-subtitle {
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .deets-text {
@@ -547,11 +556,13 @@ td {
   text-align: center;
 }
 
+
 .prototype {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-style: italic;
   padding: 1rem 0;
   width: 30ch;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -560,6 +571,23 @@ td {
   height: 100%;
   padding-top: 2rem;
   padding-bottom: 1rem;
+}
+
+.img-deets-container-2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.img-deets-2 {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.deets-text-2 {
+  width: 100%;
+  line-height: 1.5rem;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -786,9 +814,33 @@ td {
 }
 
 .deets-footer {
-  padding-top: 15%;
+  padding-top: 5%;
   font-size: 1.8rem;
   justify-content: space-between;
+}
+
+.img-deets-container-2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-deets-2 {
+  width: 55%;
+  height: 55%;
+  
+}
+
+.deets-text-2 {
+  width: 45%;
+  line-height: 1.5rem;
+}
+
+.prototype {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
 }
 }
 
@@ -925,6 +977,11 @@ td {
     /* font-size: 0.8rem; */
     visibility: collapse;
     /* font-size: 0%; */
+  }
+
+  .prototype {
+    font-size: 1.3rem;
+    margin-top: 1.4rem;
   }
   
 
@@ -1072,7 +1129,18 @@ td {
   .deets-text {
     font-size: 1.2rem;
     line-height: 2rem;
+    text-align: left;
   }
+
+  .deets-text-2 {
+    line-height: 2rem;
+  }
+
+  .prototype {
+    font-size: 1.3rem;
+    margin-top: 5rem;
+  }
+  
 }
 
 @media only screen and (min-width: 1400px) {
