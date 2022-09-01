@@ -1,5 +1,13 @@
 copyEmail = () => {
+    emailBtn = document.querySelector('.clipboard');
+    
     navigator.clipboard.writeText('contactlespino@gmail.com');
+
+    emailBtn.style.bottom = '0';
+
+    setTimeout(() => {
+        emailBtn.style.bottom = '-30%';
+      }, "2500")
 }
 
 skypeChat = () => {
