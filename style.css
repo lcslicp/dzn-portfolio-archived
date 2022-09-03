@@ -9,6 +9,7 @@
   --white: #fff;
   --black: #272727;
   --gray: #868686;
+  --textgray: #565b61;
   --highlight: #a7c6ee;
   --highlight2: #afe3d9;
   overflow-x: hidden;
@@ -63,8 +64,12 @@
   color: var(--white);
 }
 
+.text, .deets-text-2, .deets-text {
+  color: var(--textgray);
+}
+
 .small {
-  margin-top: -0.8rem;
+  margin-top: 1rem;
   font-size: 0.8rem;
   opacity: 0.6;
   padding-bottom: 2rem;
@@ -87,6 +92,10 @@ a {
 color: var(--black);
 text-decoration: none;
 
+}
+
+.gray {
+  color: var(--gray);
 }
 
 a:hover {
@@ -535,6 +544,7 @@ td {
 .deets-subtitle {
   font-size: 1.5rem;
   text-align: left;
+  color: var(--black);
 }
 
 .deets-text {
@@ -542,6 +552,7 @@ td {
   margin-top: 0;
   font-size: 1rem;
   line-height: 1.5rem;
+  text-align: left;
 }
 
 .deets-footer {
@@ -619,7 +630,7 @@ td {
 }
 
 #intro-section {
-  height: 100vh;
+  height: 120vh;
   padding-top: 15%;
 }
 
@@ -998,7 +1009,7 @@ td {
   }
 
   #intro-section {
-    height: 140vh;
+    height: 90vh;
   }
 
   #intro {
@@ -1129,7 +1140,6 @@ td {
   .deets-text {
     font-size: 1.2rem;
     line-height: 2rem;
-    text-align: left;
   }
 
   .deets-text-2 {
@@ -1138,7 +1148,7 @@ td {
 
   .prototype {
     font-size: 1.3rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
   
 }
@@ -1146,12 +1156,12 @@ td {
 @media only screen and (min-width: 1400px) {
 
   #intro-section {
-    height: 100vh;
+    height: 80vh;
   }
 
   #intro {
-    font-size: 3.5rem;
-    width: 70%;
+    font-size: 3.2rem;
+    width: 80%;
     padding-top: 0%;
   }
 
