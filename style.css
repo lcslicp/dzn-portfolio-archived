@@ -377,7 +377,7 @@ filter: drop-shadow(0 4rem 7rem rgba(39, 39, 39, 0.3));
   color: var(--black);
   font-size: 1.2rem;
   border: none;
-  width: 14ch;
+  width: 16ch;
   }
 
 .magic {
